@@ -1,5 +1,5 @@
 def dictionary_sort(arr)
-    puts "Here is your list of words:", arr.sort
+    puts "Here is your list of #{arr.length} words:", arr.sort { |x,y| x.downcase <=> y.downcase }
 end
 
 puts "Enter a word."
