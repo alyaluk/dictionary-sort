@@ -1,5 +1,17 @@
 def dictionary_sort(arr)
-  # Your code here to sort the array
+    puts "Here is your list of words:", arr.sort
 end
 
-# ...your code here to initialize the program and take user input
+puts "Enter a word."
+arr = [gets.chomp]
+x = 0
+until x != 0
+    puts "Enter another word or press enter to finish."
+    word = gets.chomp
+    if word.empty?
+        x += 1
+        else arr << word
+    end
+end
+
+dictionary_sort(arr)
